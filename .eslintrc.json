@@ -1,0 +1,31 @@
+{
+	"extends": [
+		"next/core-web-vitals",
+		"next",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"plugins": ["simple-import-sort", "unicorn"],
+	"rules": {
+		"simple-import-sort/exports": "error",
+		"simple-import-sort/imports": "error",
+		"unicorn/no-array-callback-reference": "off",
+		"unicorn/no-array-for-each": "off",
+		"unicorn/no-array-reduce": "off",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/no-unused-vars": "error",
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"react/prop-types": "off",
+		"@next/next/no-img-element": "off",
+		"no-useless-escape": "off",
+		"unicorn/prevent-abbreviations": "off"
+	},
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"rules": {
+				"unicorn/prefer-module": "off"
+			}
+		}
+	]
+}
